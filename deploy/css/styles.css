@@ -410,22 +410,24 @@ textarea {
 ============= */
 #shapes {
   display: grid;
-  grid-template-columns: auto 60% auto;
+  grid-template-columns: auto 80% auto;
   grid-template-areas: ". shapes .";
   height: 100vh;
 }
 #shapes > div {
   grid-area: shapes;
 }
-#shapes > div #red-circle {
+#shapes > div #orange-circle {
   height: 200px;
   width: 200px;
-  background-color: #e64307;
+  background-color: #fe9414;
   border-radius: 100%;
-  margin-left: 300px;
+  margin-top: 200px;
+  margin-left: 200px;
 }
-#shapes > div #blue-square {
+#shapes > div #green-square {
   height: 200px;
   width: 200px;
-  background-color: #05deff;
+  background-color: #6ba864;
+  opacity: 0;
 }
