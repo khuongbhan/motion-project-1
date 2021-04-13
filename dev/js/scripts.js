@@ -37,7 +37,12 @@ mainTL
         .to("#orange-circle",{duration: 3, x:-300, y: -200, scaleX: .45, scaleY: .45,ease: "bounce.out"},"squareOut")
         .from("#green-square",{duration: 1, y:-500, scaleX: 0.3, scaleY: 0.3, rotate: 270},"squareOut")
         .to("#green-square",{duration: 1, y:0, rotate: 0, scaleX: 1, scaleY: 1})
-        .to("#orange-circle",{duration: .75, x:400, y: 0, scaleX: 1, scaleY: 1,ease: "bounce.out"})
+        .to("#orange-circle",{duration: .4, x:400, y: 0, scaleX: 1, scaleY: 1})
+        
+    // Circle bounces back, square falls down
+        .to("#green-square",{duration: 1.8, x:300, y:600, rotate: 540, scaleX: 0.5, scaleY: 0.5}, "fall")
+        .to("#orange-circle",{duration: .2, x:300}, "fall")
+        // .to("#green-square",{duration: 1, x:300, y:400, rotate: 540})
 
 
 
