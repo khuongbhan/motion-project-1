@@ -8,7 +8,8 @@ let mainTL = gsap.timeline();
 
 mainTL
     // Circle Move from Right to Left
-        .from("#orange-circle", {duration: .3, x: 0, alpha: 0, delay: 1.5})
+        .from("#orange-circle",{duration: 2, x: 0, y: 0, scaleX: 12, scaleY: 12, delay: 1.5})
+        .to("#orange-circle", {scaleX: 1, scaleY: 1})
         .to("#orange-circle", {x:600,duration: 1,alpha: 1, ease: "bounce.out"})
     //     .to("#orange-circle",{ duration: 1, x: 400, delay: 1.5},"stage1")
     //     .to("#orange-circle",{ duration: 1, x: 200},"stage1")
@@ -43,6 +44,11 @@ mainTL
         .to("#green-square",{duration: 1.8, x:300, y:600, rotate: 540, scaleX: 0.5, scaleY: 0.5}, "fall")
         .to("#orange-circle",{duration: .2, x:300}, "fall")
         // .to("#green-square",{duration: 1, x:300, y:400, rotate: 540})
+
+    // Zoom in
+        .to("#orange-circle",{duration: 2, scaleX: 10, scaleY: 10, delay: .5}, "fall")
+        // .to("#orange-circle",{duration: .05, y: 0, scaleX: 1, scaleY: 1})
+
 
 
 
