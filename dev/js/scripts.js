@@ -9,7 +9,7 @@ let mainTL = gsap.timeline();
 mainTL
     // Circle Move from Right to Left
         .from("#orange-circle", {duration: .3, x: 0, alpha: 0, delay: 1.5})
-        .to("#orange-circle", {x:600,duration: 1,alpha: 1, ease: 'circ'})
+        .to("#orange-circle", {x:600,duration: 1,alpha: 1, ease: "bounce.out"})
     //     .to("#orange-circle",{ duration: 1, x: 400, delay: 1.5},"stage1")
     //     .to("#orange-circle",{ duration: 1, x: 200},"stage1")
     //     .to("#orange-circle", { duration: 1, x: 100},"stage1")
@@ -20,8 +20,8 @@ mainTL
     //     // .to("#orange-circle", { duration: 0.5, x: 400}, "step2")
 
     // Circle Moving Back
-        .from("#orange-circle", {duration: 1, x: 600, delay: 0.5})
-        .to("#orange-circle", {x:0,duration: .3, ease:'circ'})
+        .from("#orange-circle", {duration: 1, x: 600, delay: 0.5,ease: "bounce.out"})
+        .to("#orange-circle", {x:0,duration: .3})
     
     // Circle jumping up
     .to("#orange-circle", {delay:1, duration:1, x:-50})
